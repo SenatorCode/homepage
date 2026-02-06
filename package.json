@@ -1,21 +1,22 @@
 {
-    "name": "my-project",
-    "version": "1.0.0",
-    "description": "A webpack project with ESLint and Prettier",
-    "main": "src/index.js",
-    "scripts": {
-      "dev": "webpack serve --mode development",
-      "build": "webpack --mode production",
-      "lint": "eslint .",
-      "lint:fix": "eslint . --fix",
-      "format": "prettier --write .",
-      "format:check": "prettier --check .",
-      "deploy": "npm run build && gh-pages -d dist"
-    },
-    "dependencies": {
-      "date-fns": "^3.0.0"
-    },
-    "devDependencies": {
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A webpack project with ESLint and Prettier",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "date-fns": "^3.0.0",
+    "gh-pages": "^6.3.0"
+  },
+  "devDependencies": {
     "@eslint/js": "^9.39.2",
     "css-loader": "^7.1.2",
     "dotenv-webpack": "^8.1.1",
@@ -30,5 +31,5 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.3",
     "webpack-merge": "^6.0.1"
-    }
   }
+}
